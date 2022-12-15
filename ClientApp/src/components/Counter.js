@@ -13,7 +13,7 @@ const Counter = () => {
     });
   }
 
-  render() {
+
     return (
       <div>
         <h1>Counter</h1>
