@@ -1,4 +1,4 @@
-import React, { Component, useState } from 'react';
+import React, { useState } from 'react';
 const Counter = ()=> {
     const displayName = Counter.name;
     const [currentCount, setCurrentCount] = useState(0);
