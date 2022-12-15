@@ -1,29 +1,23 @@
-import React, { useState } from 'react';
-const Counter = ()=> {
+import { useState } from 'react';
+const Counter = () => {
     const displayName = Counter.name;
     const [currentCount, setCurrentCount] = useState(0);
-
     const incrementCounter = () => {
 
-        setCurrentCount( prev => prev+1)
+        setCurrentCount(prev => prev + 1)
     }
 
-
-
-
-
-
     return (
-      <div>
-        <h1>Counter</h1>
+        <div>
+            <h1>Counter</h1>
 
-        <p>This is a simple example of a React component.</p>
+            <p>This is a simple example of a React component.</p>
 
-        <p aria-live="polite">Current count: <strong>{currentCount}</strong></p>
+            <p aria-live="polite">Current count: <strong>{currentCount}</strong></p>
 
-        <button className="btn btn-primary" onClick={incrementCounter}>Increment</button>
-      </div>
+            <button className="btn btn-primary" onClick={incrementCounter}>Increment</button>
+        </div>
     );
-  
+
 }
 export default Counter;
